@@ -14,7 +14,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>My NFT App</h1>
-        <Banner></Banner>
+        <Banner buttonText="Mint NFT"></Banner>
       </main>
     </div>
   );
