@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Banner from "../components/banner";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>My NFT App</h1>
+        <Banner></Banner>
       </main>
     </div>
   );
