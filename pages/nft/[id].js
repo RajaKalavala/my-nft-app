@@ -1,5 +1,8 @@
+import { useRouter } from "next/router";
+
 const NFT = () => {
-  return <div>NFT </div>;
+  const router = useRouter();
+  return <div>NFT {router.query.id}</div>;
 };
 
 export default NFT;
