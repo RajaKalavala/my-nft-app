@@ -8,9 +8,11 @@ const Banner = (props) => {
         <span className={styles.title2}>App</span>
       </h1>
       <p className={styles.subTitle}>Discover and Create new NFTs</p>
-      <button className={styles.button} onClick={props.handleOnClick}>
-        {props.buttonText}
-      </button>
+      <div className={styles.buttonWrapper}>
+        <button className={styles.button} onClick={props.handleOnClick}>
+          {props.buttonText}
+        </button>
+      </div>
     </div>
   );
 };
