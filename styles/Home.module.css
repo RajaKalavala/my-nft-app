@@ -17,6 +17,7 @@
   position: absolute;
   top: 0px;
   z-index: 1;
+  opacity: 0.4;
 }
 
 .cardLayout {
@@ -56,6 +57,10 @@
     padding-right: 1rem /* 16px */;
   }
 
+  .heroImage {
+    opacity: 0.4;
+  }
+
   .main {
     margin-top: 3rem /* 48px */;
     padding-left: 1.5rem /* 24px */;
@@ -78,6 +83,7 @@
 
   .heroImage {
     right: 20%;
+    opacity: 0.4;
   }
 
   .cardLayout {
@@ -97,6 +103,7 @@
   }
   .heroImage {
     right: 20%;
+    opacity: 1;
   }
   .cardLayout {
     grid-template-columns: repeat(3, minmax(0, 1fr));

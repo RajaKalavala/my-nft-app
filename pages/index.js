@@ -20,6 +20,10 @@ export default function Home() {
           buttonText="Mint NFT"
           handleOnClick={handleOnBannerButtonClick}
         ></Banner>
+
+        <div className={styles.heroImage}>
+          <Image src="/static/nft-image1.png" width={700} height={400}></Image>
+        </div>
       </main>
     </div>
   );

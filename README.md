@@ -35,4 +35,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ##Imp Links
 
-1. https://meshgradient.com/
+1. https://meshgradient.com/ - For Gradients background
+2. https://icons8.com/mega-creator - Hero Image creator
