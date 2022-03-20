@@ -38,3 +38,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 1. https://meshgradient.com/ - For Gradients background
 2. https://icons8.com/mega-creator - Hero Image creator
 3. https://fonts.google.com/
+4. https://codebeautify.org/htmlviewer - To show html properly from view page source
+5. https://whimsical.com/ - To shape ideas (Flowchart/wireframes/docs)
