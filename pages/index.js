@@ -3,6 +3,7 @@ import Image from "next/image";
 import Banner from "../components/banner";
 import Card from "../components/card/card";
 import styles from "../styles/Home.module.css";
+import NFTs from "../data/nft-data.json";
 
 export default function Home() {
   const handleOnBannerButtonClick = () => {
@@ -25,12 +26,18 @@ export default function Home() {
         <div className={styles.heroImage}>
           <Image src="/static/nft-image1.png" width={700} height={400}></Image>
         </div>
-
-        <Card
-          name="My NFT"
-          imgUrl="/static/nft-image1.png"
-          href="/nft/nft-mint"
-        ></Card>
+        <div className={styles.cardLayout}>
+          {NFTs.map((nft) => {
+            return (
+              <Card
+                name={nft.name}
+                imgUrl={nft.imgUrl}
+                href={`/nft/${nft.id}`}
+                className={styles.card}
+              ></Card>
+            );
+          })}
+        </div>
       </main>
     </div>
   );

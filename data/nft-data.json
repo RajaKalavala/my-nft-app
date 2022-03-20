@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "name": "Holy Monkey",
+    "imgUrl": "https://cdn.pixabay.com/photo/2022/02/12/18/19/monkey-7009603_960_720.jpg",
+    "websiteUrl": "https://pixabay.com/",
+    "address": "983 Queen St E, Toronto, ON M4M 1K2",
+    "neighbourhood": "at King and Spadina"
+  },
+  {
+    "id": 1,
+    "name": "Galaxy Astronaut",
+    "imgUrl": "https://cdn.pixabay.com/photo/2022/03/01/02/51/galaxy-7040416_960_720.png",
+    "websiteUrl": "https://pixabay.com/",
+    "address": "401 Richmond St W",
+    "neighbourhood": "Richmond and Spadina"
+  },
+  {
+    "id": 300,
+    "name": "Cat Illustration",
+    "imgUrl": "https://cdn.pixabay.com/photo/2022/02/19/15/03/cat-7022873_960_720.png",
+    "websiteUrl": "https://pixabay.com/",
+    "address": "401 Richmond St W",
+    "neighbourhood": "Route 300 Neighbourhood"
+  }
+]
