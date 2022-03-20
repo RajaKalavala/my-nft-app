@@ -5,7 +5,16 @@ import Card from "../components/card/card";
 import styles from "../styles/Home.module.css";
 import NFTs from "../data/nft-data.json";
 
-export default function Home() {
+export async function getStaticProps(context) {
+  return {
+    props: {
+      NFTs,
+    },
+  };
+}
+
+export default function Home(props) {
+  console.log("props:", props);
   const handleOnBannerButtonClick = () => {
     console.log("Banner Button Click");
   };
@@ -27,9 +36,10 @@ export default function Home() {
           <Image src="/static/nft-image1.png" width={700} height={400}></Image>
         </div>
         <div className={styles.cardLayout}>
-          {NFTs.map((nft) => {
+          {props.NFTs.map((nft) => {
             return (
               <Card
+                key={nft.id}
                 name={nft.name}
                 imgUrl={nft.imgUrl}
                 href={`/nft/${nft.id}`}
