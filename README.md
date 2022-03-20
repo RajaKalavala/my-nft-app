@@ -40,3 +40,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 3. https://fonts.google.com/
 4. https://codebeautify.org/htmlviewer - To show html properly from view page source
 5. https://whimsical.com/ - To shape ideas (Flowchart/wireframes/docs)
+6. https://hype4.academy/tools/glassmorphism-generator - To create cool glass like effect in CSS
