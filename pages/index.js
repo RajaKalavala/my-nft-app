@@ -3,12 +3,12 @@ import Image from "next/image";
 import Banner from "../components/banner";
 import Card from "../components/card/card";
 import styles from "../styles/Home.module.css";
-import NFTs from "../data/nft-data.json";
+import NFTsData from "../data/nft-data.json";
 
 export async function getStaticProps(context) {
   return {
     props: {
-      NFTs,
+      NFTs: NFTsData,
     },
   };
 }
@@ -35,19 +35,26 @@ export default function Home(props) {
         <div className={styles.heroImage}>
           <Image src="/static/nft-image1.png" width={700} height={400}></Image>
         </div>
-        <div className={styles.cardLayout}>
-          {props.NFTs.map((nft) => {
-            return (
-              <Card
-                key={nft.id}
-                name={nft.name}
-                imgUrl={nft.imgUrl}
-                href={`/nft/${nft.id}`}
-                className={styles.card}
-              ></Card>
-            );
-          })}
-        </div>
+
+        {props.NFTs.length > 0 && (
+          <div>
+            <h2 className={styles.heading2}>NFTs</h2>
+
+            <div className={styles.cardLayout}>
+              {props.NFTs.map((nft) => {
+                return (
+                  <Card
+                    key={nft.id}
+                    name={nft.name}
+                    imgUrl={nft.imgUrl}
+                    href={`/nft/${nft.id}`}
+                    className={styles.card}
+                  ></Card>
+                );
+              })}
+            </div>
+          </div>
+        )}
       </main>
     </div>
   );
