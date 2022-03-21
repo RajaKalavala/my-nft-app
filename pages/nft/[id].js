@@ -16,22 +16,36 @@ export function getStaticProps(staticProps) {
 }
 
 export function getStaticPaths() {
+  const paths = NFTsData.map((nft) => {
+    return {
+      params: {
+        id: nft.id.toString(),
+      },
+    };
+  });
   return {
-    paths: [{ params: { id: "0" } }, { params: { id: "1" } }],
-    fallback: false,
+    paths,
+    fallback: true,
   };
 }
 
 const NFT = (props) => {
   const router = useRouter();
   console.log("props NFT", props);
+
+  if (router.isFallback) {
+    return <div>Loading...</div>;
+  }
+
+  const { name, websiteUrl } = props.nft;
+
   return (
     <div>
-      NFT {router.query.id}
       <Link href="/">
         <a>Back To Home</a>
       </Link>
-      <p>{props.nft.name}</p>
+      <p>{name}</p>
+      <p>{websiteUrl}</p>
     </div>
   );
 };
